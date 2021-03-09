@@ -16,7 +16,7 @@ export default {
   title: 'home',
   asyncData({ route, store }) {
      console.log('home', 'asyncData')
-    store.dispatch("fetchHomeData");
+     store.dispatch("fetchHomeData");
   },
   computed: {
     data() {
