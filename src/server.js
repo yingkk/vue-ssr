@@ -1,6 +1,3 @@
-
-
-
 /**2.与服务器集成 */
 const express = require('express');
 const app = express();
@@ -47,7 +44,7 @@ const microCache  = LRU({
         }
     })
   });
-  app.listen(8081,() => {
+  app.listen(8080,() => {
       console.log('服务已开启')
   })
 
