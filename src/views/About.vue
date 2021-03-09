@@ -16,6 +16,9 @@ export default {
     console.log('about', 'asyncData')
     store.dispatch("fetchAboutData");
   },
+  mounted(){
+    console.log('about mounted')
+  },
   computed: {
     data() {
       return this.$store.state.aboutData;

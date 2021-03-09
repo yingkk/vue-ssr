@@ -31,7 +31,7 @@ const microCache  = LRU({
   
   const isCacheable = req => cacheAbleList.includes(req.url);
   app.get('*', (req, res) => {
-    const context = { url: req.url, title: 'hello',  meta: `<meta name="keyword" content="vue,ssr"> <meta name="description" content="vue srr demo">` };
+    const context = { url: req.url, title: 'hello'};
     const cacheable = isCacheable(req);
     if (cacheable) {
         const data = microCache.get(req.url);

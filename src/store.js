@@ -21,10 +21,12 @@ export function createStore(){
             fetchHomeData({ commit }){
                 const data = [1,2,3]
                 commit('SET_HOME_DATA', data)
+                console.log('home fetch')
             },
             fetchAboutData(){
                 const data = [4,5,6]
                 commit('SET_ABOUT_DATA', data)
+                console.log('about fetch')
             }
         },
         
